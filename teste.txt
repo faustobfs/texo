@@ -1,0 +1,61 @@
+1 - Realizar uma requisição do tipo GET 
+Realizar uma requisição no endpoint https://jsonplaceholder.typicode.com/comments pesquisando pelo atributo name: alias odio sit 
+Validar o statuscode = 200 e o email do objeto retornado
+{
+      "álbumId": 1,
+      "id": 6,
+      "title": "accusamus ea aliquid et amet sequi nemo",
+      "url": "https://via.placeholder.com/600/56a8c2",
+      "thumbnailUrl": "https://via.placeholder.com/150/56a8c2"
+    },
+
+ 
+{
+    "postId": 1,
+    "id": 4,
+    "name": "alias odio sit",
+    "email": "Lew@alysha.tv",
+    "body": "non et atque\noccaecati deserunt quas accusantium unde odit nobis qui voluptatem\nquia voluptas consequuntur itaque dolor\net qui rerum deleniti ut occaecati"
+  },
+
+Email - Lew@alysha.tv
+
+2 – Realizar uma requisição do tipo POST 
+Realizar um post no endpoint https://jsonplaceholder.typicode.com/users enviando os valores no body 
+Validar o statuscode = 201 e o id retornado 
+OBS: Os dados enviados via POST NÃO são persistidos no server, fique tranquilo.
+
+Status Code 201
+"telefone": "(775)976-6794 x41206",
+
+ID = 09
+
+3 - Realizar uma requisição do tipo PUT 
+Realizar um put no endpoint https://jsonplaceholder.typicode.com/users alterando os valores dos campos: email, lat e lng do usuário com id = 5 
+Validar o statuscode = 200 e os dados alterados
+PUT https://jsonplaceholder.typicode.com/users
+Content-Type: application/json
+{
+    "id": 5,
+    "nome": "Chelsey Dietrich",
+    "nome de usuário": "Kamren",
+    "e-mail": "email@annie.ca",
+    "endereço": {
+      "rua": "Caminhadas de habilidades",
+      "suíte": "Suíte 351",
+      "cidade": "Roscoeview",
+      "código postal": "33263",
+      "geográfico": {
+        "lat": "-99.9999",
+        "lng": "99.9999"
+      }
+    },
+    "telefone": "(254)954-1289",
+    "site": "demarco.info",
+    "empresa": {
+      "nome": "Keebler LLC",
+      "catchPhrase": "Solução tolerante a falhas centrada no usuário",
+      "bs": "revolucionar sistemas ponta a ponta"
+    }
+
+
